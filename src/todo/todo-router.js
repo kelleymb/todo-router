@@ -13,7 +13,7 @@ const serializeTodo = todo => ({
 })
   
 todoRouter
-    .route('/v1/todos')
+    .route('/')
     .get((req, res, next) => {
       const knexInstance = req.app.get('db')
       TodoService.getTodos(knexInstance)
